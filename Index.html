@@ -19,7 +19,11 @@
   <h1><b>10 Facts about nature that you probably don't know</b></h1><br>
   </center>
 </div><br><p></p>
-<div id="ContentContainer">
+ <div id="Introduction">This page talks about some interesting facts about nature, so if you are a curious person about it this website is the right one for you. Stay there to read this facts. Click here to disappear the introduction :)</div>
+ <br><br /><br /><p></p><br><p></p><br /><p></p><br>
+  
+  <div id="ContentContainer">
+    
   
   <h2>1. The highest mountain in the world in nature is Mauna Kea, not Mount Everest</h2>
   
@@ -33,6 +37,22 @@
 </div>
 <body>
 
+<script>
+  
+  var Introduction = document.getElementById('Introduction');
+  var ContentContainer = document.getElementById('ContentContainer');
+  
+  Introduction.addEventListener('click', function(){
+    
+    Introduction.style.transition = '0.5s ease-in-out'
+    Introduction.style.opacity = '0%';
+    ContentContainer.style.marginTop = '-105vw'
+    
+    
+  });
+  
+  
+</script>
 
 </body>
 <style type="text/css">
@@ -101,6 +121,18 @@
    color: darkgrey;
    
  }
+  
+  #Introduction{
+    
+    font-size: 6vw;
+    
+  }
+  
+  #ContentContainer{
+    
+    transition: 1s ease-in-out;
+    
+  }
   
 </style>
 </html>
