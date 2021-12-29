@@ -1,3 +1,8 @@
+<script>
+var AdBlockDetector = document.getElementById("AdBlockDetector");
+</script>
+
+<p style="font-size: 10vw; display: none;" id="AdBlockDetector">Adblock was detected! Please turn it off for the future of this website. Thanks! 👍😊</p>
 <noscript>
   <p style="font-size: 10vw;">You need JavaScript to run this page (JavaScript is used for ads and in-page actions, like payments and etc.)</p>
 <style>
@@ -12,12 +17,11 @@ display: none;
 </noscript>
 
   <script>
-var AdBlockDetector = document.getElementById("AdBlockDetector");
 var banner-ad = document.getElementById("banner-ad");
 var htmlOfPage = document.querySelector("html");
 if(!banner-ad){
 
-EverythingContainer.innerHTML = '<p style="font-size: 10vw;">Adblock was detected! Please turn it off for the future of this website. Thanks! 👍😊</p>';
+AdBlockDetector.style.display = "block"
 
 }
   
