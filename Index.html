@@ -23,8 +23,10 @@ var htmlOfPage = document.querySelector("html");
 
 $.fn.checkEmpty = function() {
     if (!this.length)
-        throw new Error("Adblock was detected! Please turn it off for the future of this website. Thanks! 👍😊");
-    return this;
+
+    alert("Adblock was detected! Please turn it off for the future of this website. Thanks! 👍😊")
+
+     return this;
 };
 
 $('#banner-ad').checkEmpty();
