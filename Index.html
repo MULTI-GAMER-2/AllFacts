@@ -51,7 +51,7 @@ display: none;
   <p>So tell your teachers they are wrong :)</p>
 
 </div>
-<body>
+<body onload="Warning();">
 
 <script>
   
@@ -71,6 +71,10 @@ display: none;
 </script>
 <script>
 var banner-ad = document.getElementById("banner-ad");
+
+function Warning(){
+
+
 Swal.fire({
   title: 'Anti-AdBlock',
   text: 'We get it, advertisements are annoying!\nSure, ad-blocking software does a great job at blocking ads, but it also blocks some useful and important features of our website. For the best possible site experience please take a moment to disable your AdBlocker. \n\n\nWe appreciate your understanding and cooperation, thanks 👍😊',
@@ -79,6 +83,10 @@ Swal.fire({
   imageHeight: 200,
   imageAlt: 'Anti-AdBlockImg',
 });
+
+
+}
+
   
 </script>
 
