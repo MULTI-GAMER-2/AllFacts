@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <noscript>
   <p style="font-size: 10vw;">You need JavaScript to run this page (JavaScript is used for ads and in-page actions, like payments and etc.)</p>
 <style>
@@ -11,13 +12,13 @@ display: none;
 </style>
 </noscript>
 
-<!DOCTYPE html>
-<html lang="en-GB">
+<html>
 
 
 <div id="banner-ad">
 <div id="EverythingContainer">
 <head>
+  <link rel="shortcut icon" href="https://i.ibb.co/RvhyvyH/IMG-20211229-171743.jpg" type="image/x-icon" />
     <meta charset="UTF-8">
     <meta name="description" content="This page is about 10 interesting facts about nature. Click here to know some of them!" />
     <meta name="robots" content="INDEX, FOLLOW">
@@ -25,14 +26,15 @@ display: none;
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>10 Facts about Nature that you probably don't know - AllFacts</title>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.8/sweetalert2.js" integrity="sha512-6OaQemSmGBesLcXnnqomD2dQdjQZADWvXdeVGWSOBUaJAy0UuGpQNQqmP63QBXtS6PW9xIJvLgHu5BZ6IYMwNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
      <script src="https://kit.fontawesome.com/be2c2b534e.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" type="text/css" />
 </head>
 
 <div id="Container">
   <center><br>
-  <img src="https://i.ibb.co/DD7xwLG/pexels-luis-dalvan-1770809.jpg" alt="NatureImg" id="NatureImg" alt="NatureImg">
+  <img src="https://i.ibb.co/DD7xwLG/pexels-luis-dalvan-1770809.jpg" alt="pexels-luis-dalvan-1770809" id="NatureImg" alt="NatureImg">
   <h1><b>10 Facts about nature that you probably don't know</b></h1><br>
   </center>
 </div><br><p></p>
@@ -69,6 +71,23 @@ display: none;
   });
 
 
+</script>
+<script>
+var banner-ad = document.getElementById("banner-ad");
+
+swal({
+  title: 'Anti-AdBlock',
+  text: 'We get it, advertisements are annoying!\nSure, ad-blocking software does a great job at blocking ads, but it also blocks some useful and important features of our website. For the best possible site experience please take a moment to disable your AdBlocker. \n\n\nWe appreciate your understanding and cooperation, thanks 👍😊',
+  imageUrl: 'https://unsplash.it/400/200',
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'Anti-AdBlockImg',
+});
+
+
+
+
+  
 </script>
 
 </body>
@@ -153,28 +172,5 @@ display: none;
   
 </style>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-<script>
-var bannerAd = document.getElementById("banner-ad");
-
-function Warning(){
-
-Swal.fire({
-  title: 'Anti-AdBlock',
-  text: 'We use Anti-AdBlock technology!\nSure, ad-blocking software does a great job at blocking ads, but it also blocks some useful and important features of our website. For the best possible site experience please take a moment to disable your AdBlocker. \n\n\nWe appreciate your understanding and cooperation, thanks 👍😊',
-  imageUrl: 'https://thumbs.dreamstime.com/b/red-stop-sign-white-hand-symbol-icon-vector-illustration-146759730.jpg',
-  imageWidth: 200,
-  imageHeight: 200,
-  imageAlt: 'Anti-AdBlockImg',
-});
-
-
-}
-
-setTimeout(Warning, 1000)
-  
-</script>
 </div>
-  
 </html>
