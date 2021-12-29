@@ -12,6 +12,7 @@ display: none;
 </noscript>
 <!DOCTYPE html>
 <html>
+<div id="banner-ad">
 <div id="EverythingContainer">
 <head>
     <meta charset="UTF-8">
@@ -63,6 +64,14 @@ display: none;
     
   });
   
+var EverythingContainer = document.getElementById("EverythingContainer");
+var banner-ad = document.getElementById("banner-ad");
+var htmlOfPage = document.querySelector("html");
+if(banner-ad.style.display = "none"){
+
+htmlOfPage.innerHTML = "<p style="font-size: 10vw;">Adblock was detected! Please turn it off for the future of this website. Thanks! 👍😊</p>"
+
+}
   
 </script>
 
@@ -147,5 +156,6 @@ display: none;
   }
   
 </style>
+</div>
 </div>
 </html>
