@@ -1,5 +1,5 @@
-var AdBlockDetector = document.getElementById("AdBlockDetector");
-</script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 <noscript>
   <p style="font-size: 10vw;">You need JavaScript to run this page (JavaScript is used for ads and in-page actions, like payments and etc.)</p>
@@ -16,11 +16,19 @@ display: none;
 
   <script>
 var banner-ad = document.getElementById("banner-ad");
-<p style="font-size: 10vw;">Adblock was detected! Please turn it off for the future of this website. Thanks! 👍😊</p>
+Swal.fire({
+  title: 'Anti-AdBlock',
+  text: 'We use Anti-AdBlock technology, so if you are using it, please turn it off for the future of this website. Thanks! 👍😊',
+  imageUrl: 'https://unsplash.it/400/200',
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'Anti-AdBlockImg',
+})
   
 </script>
 <!DOCTYPE html>
 <html>
+
 <div id="banner-ad">
 <div id="EverythingContainer">
 <head>
