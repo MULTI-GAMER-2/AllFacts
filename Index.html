@@ -30,11 +30,10 @@ display: none;
 
                 if(!ad || ad.innerHTML.length == 0
                                 || ad.clientHeight === 0) {
-                    
+                    alert("Ad-block detected")
                 }else{
 }
-
-window.location.href = "/adblockDetected.html";
+alert("No adblock")
 
             }, 100);
         }
