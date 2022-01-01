@@ -30,12 +30,11 @@ display: none;
 
                 if(!ad || ad.innerHTML.length == 0
                                 || ad.clientHeight === 0) {
-                    alert("Ad-block detected");
-                } else {
-                    console.log('No Ad Blocker');
+                    
+window.location.href = "/adblockDetected.html";
                 }
 
-            }, 2000);
+            }, 1000);
         }
 
         /* Add a page load listener */
@@ -264,31 +263,6 @@ It turns out that charged particles in the planets' atmosphere interact to creat
   gtag('config', 'G-BLNZRYCQS5');
 </script>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61cde83c35c38b1c"></script>
-<script>
-
-function Warning(){
-
-Swal.fire({
-  title: 'We use Anti-AdBlock',
-  text: 'We use Anti-AdBlock technology!\nSure, ad-blocking software does a great job at blocking ads, but it also blocks some useful and important features of our website. For the best possible site experience please if you are using AdBlock take a moment to disable it. \n\n\nWe appreciate your understanding and cooperation, thanks 👍😊',
-  imageUrl: 'https://download.logo.wine/logo/AdBlock/AdBlock-Logo.wine.png',
-  imageWidth: 300,
-  imageHeight: 200,
-  imageAlt: 'Anti-AdBlockImg',
-  footer: '<a href="/anti-adblock.html" style="text-decoration: none; color: purple;">What are AdBlockers?</a>'
-
-});
-
-
-}
-
-  setTimeout(Warning, 10000)
-  
-  
-
-
-  
-</script>
 
 </body>
 <style type="text/css">
