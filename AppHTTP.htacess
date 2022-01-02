@@ -1,5 +1,0 @@
-Options +FollowSymLinks
-RewriteEngine on
-RewriteCond %{HTTP_HOST} .
-RewriteCond %{HTTP_HOST} !^netlify.app
-RewriteRule (.*) https://allfacts.netlify.app/$1 [R=301,L]
